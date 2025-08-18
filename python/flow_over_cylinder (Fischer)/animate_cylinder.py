@@ -11,15 +11,16 @@ import os
 from tqdm import tqdm
 
 # Configuration
-ver = 5
+ver = 1
 Re_value = 600
 plot_types = ["vorticity", "velocity"]
 dpi = 200
+cylinder_type = "dual"
 simulation_duration = 30  # seconds of final video duration
 
 def make_video(plot_type):
-    output_dir = f"v{str(ver)}_re_{str(Re_value)}/{plot_type}_frames/"
-    output_file = f"outputs/mp4/{plot_type}_re_{str(Re_value)}.mp4"
+    output_dir = f"v{str(ver)}_{cylinder_type}_re_{str(Re_value)}/{plot_type}_frames/"
+    output_file = f"outputs/mp4/v{str(ver)}_{cylinder_type}_{plot_type}_re_{str(Re_value)}.mp4"
 
     # Set up figure
     fig, ax = plt.subplots(figsize=(12, 8), facecolor='black')

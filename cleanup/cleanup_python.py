@@ -6,9 +6,9 @@ from pathlib import Path
 import re
 
 # === CONFIGURATION ===
-ver = 3
-Re_value = 100
-base_path = Path(f"/home/santhosh/projects/julia/julia-cfd-simulations/python/flow_over_cylinder (Fischer)/v{str(ver)}_re_{str(Re_value)}_2/")
+ver = 1
+Re_value = 600
+base_path = Path(f"/home/santhosh/internships/cfd-simulations/python/flow_over_cylinder (Fischer)/v{str(ver)}_dual_re_{str(Re_value)}/vorticity_frames")
 duration_s = 30.0                # Total simulation time in seconds
 fps_to_keep = 1                  # How many frames per second to retain
 prefixes = ["velocity_frame", "vorticity_frame"]
